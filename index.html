@@ -50,14 +50,14 @@
             box-shadow: 0 1px 6px var(--shadow-color);
             z-index: 1000;
             transition: background-color 0.3s ease;
-            height: 56px;
+            min-height: 56px;
         }
 
         #navbar .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 56px;
+            min-height: 56px;
             width: 92%;
             max-width: 1120px;
             margin: 0 auto;
@@ -1128,6 +1128,17 @@
 </footer>
 
 <script>
+    // 动态调整body padding以适应navbar高度
+    function adjustBodyPadding() {
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            const navbarHeight = navbar.offsetHeight;
+            document.body.style.paddingTop = (navbarHeight + 2) + 'px';
+        }
+    }
+    window.addEventListener('load', adjustBodyPadding);
+    window.addEventListener('resize', adjustBodyPadding);
+
     document.getElementById('navbar').addEventListener('click', function (e) {
         const link = e.target.closest('a');
         if (!link || !this.contains(link)) return;
