@@ -50,14 +50,14 @@
             box-shadow: 0 1px 6px var(--shadow-color);
             z-index: 1000;
             transition: background-color 0.3s ease;
-            min-height: 56px;
+            height: 56px;
         }
 
         #navbar .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            min-height: 56px;
+            height: 56px;
             width: 92%;
             max-width: 1120px;
             margin: 0 auto;
@@ -1103,17 +1103,23 @@
     <h2>Professional Activities</h2>
     <ul>
         <li style="margin-bottom: 12px;"><strong>Conference Reviews</strong>
-            <p style="margin: 2px 0 0 0;">Conference on Computer Vision and Pattern Recognition (CVPR) 2026</p>
-            <p style="margin: 2px 0 0 0;">AAAI Conference on Artificial Intelligence (AAAI) 2026</p>
-            <p style="margin: 2px 0 0 0;">International Conference on Computer Vision (ICCV) 2025</p>
-            <p style="margin: 2px 0 0 0;">IEEE International Symposium on Biomedical Imaging (ISBI) 2026</p>
+            <ul style="margin-top: 4px;">
+                <li>Conference on Computer Vision and Pattern Recognition (CVPR) 2026</li>
+                <li>AAAI Conference on Artificial Intelligence (AAAI) 2026</li>
+                <li>International Conference on Computer Vision (ICCV) 2025</li>
+                <li>IEEE International Symposium on Biomedical Imaging (ISBI) 2026</li>
+            </ul>
         </li>
         <li style="margin-bottom: 12px;"><strong>Journal Reviews</strong>
-            <p style="margin: 2px 0 0 0;">npj Digital Medicine</p>
+            <ul style="margin-top: 4px;">
+                <li>npj Digital Medicine</li>
+            </ul>
         </li>
         <li><strong>Teaching Tutor</strong>
-            <p style="margin: 2px 0 0 0;">Fall '24, '25: APAI1001/ASAI1001 Artificial Intelligence: Foundation, Philosophy and Ethics</p>
-            <p style="margin: 2px 0 0 0;">Spring '25, '26: STAT1016 Data Science, STAT1018 Foundations of Data Science</p>
+            <ul style="margin-top: 4px;">
+                <li>Fall '24, '25: APAI1001/ASAI1001 Artificial Intelligence: Foundation, Philosophy and Ethics</li>
+                <li>Spring '25, '26: STAT1016 Data Science, STAT1018 Foundations of Data Science</li>
+            </ul>
         </li>
     </ul>
 </div>
@@ -1128,17 +1134,6 @@
 </footer>
 
 <script>
-    // 动态调整body padding以适应navbar高度
-    function adjustBodyPadding() {
-        const navbar = document.getElementById('navbar');
-        if (navbar) {
-            const navbarHeight = navbar.offsetHeight;
-            document.body.style.paddingTop = (navbarHeight + 2) + 'px';
-        }
-    }
-    window.addEventListener('load', adjustBodyPadding);
-    window.addEventListener('resize', adjustBodyPadding);
-
     document.getElementById('navbar').addEventListener('click', function (e) {
         const link = e.target.closest('a');
         if (!link || !this.contains(link)) return;
