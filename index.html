@@ -307,7 +307,7 @@
         body {
             padding-top: 58px;
             font-family: 'Lato', sans-serif;
-            line-height: 1.6;
+            line-height: 1.5;
             color: var(--text-color);
             max-width: 100%;
             margin: 0 auto;
@@ -367,7 +367,7 @@
         }
         .biography {
             margin: 6px 0 12px 0;
-            line-height: 1.65;
+            line-height: 1.5;
         }
         .contact-info {
             margin-top: 14px;
@@ -576,7 +576,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
+            line-height: 1.5;
             color: #333;
             max-width: 100vw;
             overflow-x: hidden;
@@ -777,7 +777,7 @@
         .abstract {
             color: var(--text-color);
             font-size: 16px;
-            line-height: 1.6;
+            line-height: 1.5;
             margin: 10px 0;
             text-align: justify;
         }
@@ -886,7 +886,7 @@
             gap: 8px;
             padding: 6px 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            line-height: 1.35;
+            line-height: 1.5;
         }
 
         .news-item:last-child {
@@ -902,7 +902,7 @@
         .news-content {
             color: var(--text-color);
             font-size: 14.5px;
-            line-height: 1.35;
+            line-height: 1.5;
         }
 
         .news-content a {
@@ -935,7 +935,6 @@
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#awards">Awards</a></li>
                 <li><a href="#service">Service</a></li>
-                <li><a href="#teaching">Teaching</a></li>
             </ul>
             <button id="mode-toggle">
                 <i class="fas fa-moon moon"></i>
@@ -986,11 +985,11 @@
 <main class="container compact-grid">
 <div id="biography" class="section full-span">
     <h2>About</h2>
-    <p style="color: var(--text-color); line-height: 1.65; margin-bottom: 8px;">
+    <p style="color: var(--text-color); margin-bottom: 8px;">
         I am a PhD student at <a href="https://www.hku.hk/" target="_blank">The University of Hong Kong</a>, advised by Prof. <a href="https://yulequan.github.io/" target="_blank">Lequan Yu</a>. 
         Previously, I obtained a BSc degree from the same university in 2024.
     </p>
-    <p style="color: var(--text-color); line-height: 1.65; margin-bottom: 6px;">
+    <p style="color: var(--text-color); margin-bottom: 6px;">
         My research interests include:
         (1) <strong>Agentic AI</strong>: Autonomous agents capable of continual learning from experience and self-reflective reasoning;
         (2) <strong>Trustworthy Multimodal LLMs</strong>: Interpretable, robust, and uncertainty-aware multimodal LLMs;
@@ -1003,10 +1002,6 @@
     <h2>News</h2>
     <div class="news-scroller" role="region" aria-live="polite">
         <ul class="news-list">
-            <li class="news-item">
-                <span class="news-date">01/2026</span>
-                <span class="news-content">Our work was featured in <a href="https://www.forbeschina.com/youth/70901" target="_blank">Forbes</a>.</span>
-            </li>
             <li class="news-item">
                 <span class="news-date">11/2025</span>
                 <span class="news-content">One paper was accepted by <a href="https://aaai.org/aaai-conference/aaai-26/" target="_blank">AAAI 2026</a> (Oral).</span>
@@ -1091,12 +1086,13 @@
 </div>
 
 <div id="awards" class="section full-span">
-    <h2>Awards and Honors</h2>
+    <h2>Awards & Honors</h2>
     <ul>
+        <li>[Media] Featured in <a href="https://www.forbeschina.com/youth/70901" target="_blank">Forbes</a>, 2026.</li>
         <li>AAAI-26 Student Scholarship, AAAI, 2025.</li>
         <li>Postgraduate Scholarship Award, HKU, 2024-Present.</li>
         <li>Dean's Honours List (Top 5%), Faculty of Science, HKU, 2024.</li>
-        <li>Outstanding Tech Final Year Project Reward, Ideation & Incubation Programme (USD 167,000 grant), <a href="https://www.hkstp.org/" target="_blank">HKSTP</a>, 2024.</li>
+        <li>Outstanding Tech Final Year Project Award, Ideation & Incubation Programme (USD 167,000 grant), <a href="https://www.hkstp.org/" target="_blank">HKSTP</a>, 2024.</li>
         <li>Summer Research Fellowship (USD 2,000 fellowship), HKU, 2023.</li>
     </ul>
 </div>
@@ -1105,35 +1101,21 @@
 
 <div id="service" class="section full-span">
     <h2>Professional Activities</h2>
-    <div style="margin-bottom: 8px;">
-        <p style="margin: 0 0 8px 0;"><strong>Conference Reviews</strong></p>
-        <ul style="line-height: 1.5; margin: 0; padding-left: 20px;">
-            <li>Conference on Computer Vision and Pattern Recognition (CVPR 2026)</li>
-            <li>AAAI Conference on Artificial Intelligence (AAAI 2026)</li>
-            <li>International Conference on Computer Vision (ICCV 2025)</li>
-            <li>IEEE International Symposium on Biomedical Imaging (ISBI 2026)</li>
-        </ul>
-    </div>
-    <div style="margin-bottom: 8px;">
-        <p style="margin: 0 0 8px 0;"><strong>Journal Reviews</strong></p>
-        <ul style="line-height: 1.5; margin: 0; padding-left: 20px;">
-            <li>npj Digital Medicine</li>
-        </ul>
-    </div>
-</div>
-
-<div id="teaching" class="section full-span">
-    <h2>Teaching</h2>
-    <div style="line-height: 1.6; margin-bottom: 0;">
-        <div style="display: flex; color: var(--text-color);">
-            <div style="width: 120px; flex-shrink: 0;">Fall '24, '25:</div>
-            <div>APAI1001/ASAI1001 Artificial Intelligence: Foundation, Philosophy and Ethics</div>
-        </div>
-        <div style="display: flex; color: var(--text-color); margin-bottom: 8px;">
-            <div style="width: 120px; flex-shrink: 0;">Spring '25:</div>
-            <div>STAT1016 Data Science 101, STAT1018 Foundations of Data Science</div>
-        </div>
-    </div>
+    <ul>
+        <li style="margin-bottom: 12px;"><strong>Conference Reviews</strong>
+            <p style="margin: 2px 0 0 0;">Conference on Computer Vision and Pattern Recognition (CVPR) 2026</p>
+            <p style="margin: 2px 0 0 0;">AAAI Conference on Artificial Intelligence (AAAI) 2026</p>
+            <p style="margin: 2px 0 0 0;">International Conference on Computer Vision (ICCV) 2025</p>
+            <p style="margin: 2px 0 0 0;">IEEE International Symposium on Biomedical Imaging (ISBI) 2026</p>
+        </li>
+        <li style="margin-bottom: 12px;"><strong>Journal Reviews</strong>
+            <p style="margin: 2px 0 0 0;">npj Digital Medicine</p>
+        </li>
+        <li><strong>Teaching Tutor</strong>
+            <p style="margin: 2px 0 0 0;">Fall '24, '25: APAI1001/ASAI1001 Artificial Intelligence: Foundation, Philosophy and Ethics</p>
+            <p style="margin: 2px 0 0 0;">Spring '25, '26: STAT1016 Data Science, STAT1018 Foundations of Data Science</p>
+        </li>
+    </ul>
 </div>
 
 
@@ -1142,7 +1124,7 @@
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=222&t=tt&d=vlgJLAPzmOOnR6ZgnSlFgbrvv8iaONqgcMOq7KC8JH4'></script>
 
 <footer>
-<p>© 2026 Yushi Feng · Last updated: Jan 2026</p>
+<p>Last updated: Jan 2026</p>
 </footer>
 
 <script>
