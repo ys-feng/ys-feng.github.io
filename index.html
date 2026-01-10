@@ -331,13 +331,18 @@
             max-width: 1080px;
             margin: 0 auto;
         }
+        header .profile-container {
+            flex-direction: row-reverse;
+        }
         .photo-container {
             flex-shrink: 0;
-            width: 200px;
+            width: 180px;
+            aspect-ratio: 3 / 4;
         }
         header img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px var(--shadow-color);
         }
@@ -444,23 +449,10 @@
                 padding-bottom: 12px;
             }
             header .container {
-                flex-direction: row;
                 align-items: center;
                 text-align: left;
                 padding: 30px 1.3rem 10px 1.3rem;
                 gap: 20px;
-            }
-            .photo-container {
-                width: 180px;
-                height: 280px;
-                flex-shrink: 0;
-            }
-            header img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px var(--shadow-color);
             }
             .text-content {
                 padding-top: 0;
@@ -484,17 +476,6 @@
                 gap: 18px;
                 padding: 24px 1.2rem 10px 1.2rem;
             }
-            .photo-container {
-                width: 140px;
-                height: 220px;
-            }
-            header img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px var(--shadow-color);
-            }
         }
 
         @media (max-width: 480px) {
@@ -505,17 +486,6 @@
             header .container {
                 gap: 16px;
                 padding: 20px 1.15rem 6px 1.15rem;
-            }
-            .photo-container {
-                width: 132px;
-                height: 192px;
-            }
-            header img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px var(--shadow-color);
             }
             h1 {
                 font-size: 24px;
@@ -539,17 +509,6 @@
             header .container {
                 gap: 12px;
                 padding: 16px 1.1rem 6px 1.1rem;
-            }
-            .photo-container {
-                width: 112px;
-                height: 168px;
-            }
-            header img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px var(--shadow-color);
             }
             h1 {
                 font-size: 20px;
@@ -930,7 +889,7 @@
             </button>
             <a href="#" class="logo">Yushi Feng</a>
             <ul>
-                <li><a href="#biography">Biography</a></li>
+                <li><a href="#" class="home-link">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#awards">Awards</a></li>
@@ -942,7 +901,7 @@
             </button>
         </div>
     </nav>
-    <div class="container">
+    <div class="container profile-container">
         <div class="photo-container">
             <img src="photo.jpg" alt="Yushi Feng">
         </div>
@@ -950,7 +909,6 @@
             <h1>Yushi Feng</h1>
             <div class="biography">
                 <p><strong>PhD Student</strong></p>
-                <p>Rm 103, Run Run Shaw Building</p>
                 <p>Division of AI & Data Science</p>
                 <p>School of Computing & Data Science</p>
                 <p>The University of Hong Kong</p>
@@ -967,9 +925,6 @@
                 </a>
                 <a href="https://orcid.org/#" target="_blank" title="ORCID">
                     <i class="ai ai-orcid"></i>
-                </a>
-                <a href="https://www.researchgate.net/profile/#" target="_blank" title="ResearchGate">
-                    <i class="ai ai-researchgate"></i>
                 </a>
                 <a href="https://x.com/steveysfeng" target="_blank" title="X">
                     <i class="fab fa-twitter"></i>
@@ -1142,13 +1097,17 @@
 
         e.preventDefault();
         const targetId = href.substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            const nav = document.getElementById('navbar');
-            const navHeight = nav ? nav.offsetHeight : 0;
-            const rect = targetElement.getBoundingClientRect();
-            const absoluteY = window.pageYOffset + rect.top - navHeight - 10;
-            window.scrollTo({ top: absoluteY, behavior: 'smooth' });
+        if (targetId === '' || link.classList.contains('home-link')) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const nav = document.getElementById('navbar');
+                const navHeight = nav ? nav.offsetHeight : 0;
+                const rect = targetElement.getBoundingClientRect();
+                const absoluteY = window.pageYOffset + rect.top - navHeight - 10;
+                window.scrollTo({ top: absoluteY, behavior: 'smooth' });
+            }
         }
         if (window.innerWidth <= 768) {
             closeMenu();
