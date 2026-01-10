@@ -7,11 +7,11 @@
     <meta property="og:title" content="Yushi Feng's Homepage">
     <meta name="twitter:title" content="Yushi Feng's Homepage">
     <link rel="icon" type="image/jpeg" href="HKU_logo.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <style>
         :root {
+            /* Colors */
             --bg-color: #f5f5f5;
             --text-color: #333;
             --card-bg: #fff;
@@ -20,13 +20,21 @@
             --accent-color: #002fa7;
             --hover-color: #3498db;
             --secondary-text: #666;
-            --card-px: 14px;
+            --section-border: rgba(0,0,0,0.045);
+            /* Spacing */
+            --spacing-xs: 4px;
+            --spacing-sm: 6px;
+            --spacing-md: 10px;
+            --spacing-lg: 14px;
+            --spacing-xl: 20px;
+            --spacing-2xl: 26px;
+            /* Card */
+            --card-px: var(--spacing-lg);
             --card-py: 12px;
-            --card-gap: 14px;
+            --card-gap: var(--spacing-lg);
             --card-radius: 6px;
             --item-gap: 8px;
             --grid-min: 320px;
-            --section-border: rgba(0,0,0,0.045);
         }
 
         .dark-mode {
@@ -97,11 +105,11 @@
             background: none;
             border: none;
             cursor: pointer;
-            padding: 8px;
+            padding: var(--item-gap);
             position: relative;
             width: 40px;
             height: 40px;
-            border-radius: 6px;
+            border-radius: var(--card-radius);
             transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
         }
 
@@ -156,10 +164,6 @@
         .dark-mode #hamburger-menu:hover {
             background-color: var(--shadow-color);
         }
-
-        
-
-
 
         #mode-toggle {
             width: 60px;
@@ -262,21 +266,8 @@
             border-bottom-color: var(--hover-color);
         }
 
-        body {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
         .section {
             transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-        }
-
-        
-
-        @media (max-width: 768px) {
-            #navbar .container {
-                flex-direction: row;
-                justify-content: space-between;
-            }
         }
 
         main {
@@ -305,16 +296,16 @@
         }
         
         body {
-            padding-top: 58px;
-            font-family: 'Lato', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Lato', sans-serif;
             line-height: 1.5;
             color: var(--text-color);
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 0;
             font-size: 16px;
             background-color: var(--bg-color);
-            transition: background-color 0.3s ease;
+            max-width: 100vw;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         
         header {
@@ -351,7 +342,7 @@
         }
         h1 {
             color: var(--text-color);
-            margin: 0 0 6px 0;
+            margin: 0 0 var(--spacing-sm) 0;
             font-size: 28px;
         }
         
@@ -367,15 +358,15 @@
         }
         .text-content {
             flex: 1;
-            padding-top: 4px;
+            padding-top: var(--spacing-xs);
             max-width: 520px;
         }
         .biography {
-            margin: 6px 0 12px 0;
+            margin: var(--spacing-sm) 0 12px 0;
             line-height: 1.5;
         }
         .contact-info {
-            margin-top: 14px;
+            margin-top: var(--spacing-lg);
         }
         h2 {
             color: var(--text-color);
@@ -383,7 +374,7 @@
             padding-bottom: 0;
             font-size: 20px;
             margin-top: 24px;
-            margin-bottom: 10px;
+            margin-bottom: var(--spacing-md);
             font-weight: 600;
             letter-spacing: 0.01em;
         }
@@ -401,7 +392,7 @@
         .section ul { margin-block: 0; margin-inline: 0; }
         .section h2 {
             margin-top: 0;
-            margin-bottom: 6px;
+            margin-bottom: var(--spacing-sm);
         }
         .section strong {
             color: var(--text-color);
@@ -410,13 +401,13 @@
             border-color: var(--section-border);
         }
         .experience-item {
-            margin-bottom: 20px;
+            margin-bottom: var(--spacing-xl);
         }
         .experience-item h3 {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 10px;
+            margin-bottom: var(--spacing-md);
             font-size: 20px;
         }
         .experience-item p {
@@ -430,13 +421,13 @@
             font-weight: 300;
         }
         ul {
-            padding-left: 20px;
+            padding-left: var(--spacing-xl);
             font-size: 16px;
         }
         
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: var(--spacing-md) 0;
             background-color: var(--card-bg);
             color: var(--text-color);
         }
@@ -444,6 +435,10 @@
 
 
         @media (max-width: 768px) {
+            #navbar .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
             header {
                 padding-top: 60px;
                 padding-bottom: 12px;
@@ -460,6 +455,10 @@
                 padding-top: 0;
                 max-width: 100%;
                 flex: 1;
+            }
+            .container {
+                width: 95%;
+                padding: 0 1.25rem;
             }
             .experience-item h3 {
                 flex-direction: column;
@@ -481,6 +480,9 @@
         }
 
         @media (max-width: 480px) {
+            .container {
+                padding: 0 1.5rem;
+            }
             header {
                 padding-top: 60px;
                 padding-bottom: 8px;
@@ -498,7 +500,6 @@
             .contact-info {
                 font-size: 14px;
             }
-
             .news-scroller {
                 max-height: 300px;
             }
@@ -535,15 +536,6 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.5;
-            color: #333;
-            max-width: 100vw;
-            overflow-x: hidden;
-            font-size: 16px;
-        }
-
         .container {
             width: 92%;
             max-width: 1120px;
@@ -551,30 +543,11 @@
             padding: 0 1.75rem;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 0 1.25rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 1.5rem;
-            }
-        }
-
-        
-
-        
-
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
-
-        
 
         .dark-mode h2 {
             color: #60a5fa;
@@ -690,7 +663,7 @@
 
         .authors {
             color: var(--text-color);
-            margin: 4px 0;
+            margin: var(--spacing-xs) 0;
             font-size: 16px;
             line-height: 1.5;
         }
@@ -698,13 +671,13 @@
         .venue {
             color: var(--text-color);
             font-style: normal;
-            margin: 4px 0;
+            margin: var(--spacing-xs) 0;
             font-size: 16px;
             line-height: 1.5;
         }
 
         #publications .experience-item {
-            margin-bottom: 14px;
+            margin-bottom: var(--spacing-lg);
             padding-left: 12px;
             position: relative;
         }
@@ -728,7 +701,7 @@
         }
 
         #publications .experience-item:first-child h3 {
-            margin-top: 4px;
+            margin-top: var(--spacing-xs);
         }
 
         #publications .experience-item:first-child::before {
@@ -739,11 +712,9 @@
             color: var(--text-color);
             font-size: 16px;
             line-height: 1.5;
-            margin: 10px 0;
+            margin: var(--spacing-md) 0;
             text-align: justify;
         }
-
-        
 
         .dark-mode .authors,
         .dark-mode .abstract {
@@ -755,7 +726,7 @@
         }
 
         .social-links {
-            margin: 20px 0 0 0;
+            margin: var(--spacing-xl) 0 0 0;
             display: flex;
             gap: 25px;
             align-items: center;
@@ -822,14 +793,14 @@
 
         /* News section */
         .news-section h2 {
-            margin-bottom: 6px;
+            margin-bottom: var(--spacing-sm);
         }
 
         .news-scroller {
             max-height: 240px;
             overflow-y: auto;
-            padding-right: 6px;
-            margin-top: 6px;
+            padding-right: var(--spacing-sm);
+            margin-top: var(--spacing-sm);
         }
 
         .news-list {
@@ -838,14 +809,14 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: var(--spacing-sm);
         }
 
         .news-item {
             display: grid;
             grid-template-columns: 80px 1fr;
-            gap: 8px;
-            padding: 6px 0;
+            gap: var(--item-gap);
+            padding: var(--spacing-sm) 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.08);
             line-height: 1.5;
         }
@@ -1046,11 +1017,11 @@
     <h2>Awards & Honors</h2>
     <ul>
         <li>[Media] Featured in <a href="https://www.forbeschina.com/youth/70901" target="_blank">Forbes</a>, 2026.</li>
-        <li>AAAI-26 Student Scholarship, AAAI, 2025.</li>
-        <li>Postgraduate Scholarship Award, HKU, 2024-Present.</li>
-        <li>Dean's Honours List (Top 5%), Faculty of Science, HKU, 2024.</li>
+        <li>AAAI-26 Student Scholarship, <a href="https://aaai.org/" target="_blank">AAAI</a>, 2025.</li>
+        <li>Postgraduate Scholarship, HKU, 2024-Present.</li>
+        <li>Dean's Honours List (Top 5%), <a href="https://www.scifac.hku.hk/" target="_blank">Faculty of Science</a>, HKU, 2024.</li>
         <li>Outstanding Tech Final Year Project Award, Ideation & Incubation Programme (USD 167,000 grant), <a href="https://www.hkstp.org/" target="_blank">HKSTP</a>, 2024.</li>
-        <li>Summer Research Fellowship (USD 2,000 fellowship), HKU, 2023.</li>
+        <li>Summer Research Fellowship (USD 2,000), HKU, 2023.</li>
     </ul>
 </div>
 
@@ -1084,7 +1055,7 @@
 
 </main>
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=222&t=tt&d=vlgJLAPzmOOnR6ZgnSlFgbrvv8iaONqgcMOq7KC8JH4'></script>
+<script async type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=222&t=tt&d=vlgJLAPzmOOnR6ZgnSlFgbrvv8iaONqgcMOq7KC8JH4'></script>
 
 <footer>
 <p>Last updated: Jan 2026</p>
