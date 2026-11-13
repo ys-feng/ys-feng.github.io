@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yushi Feng's Homepage</title>
+    <meta property="og:title" content="Yushi Feng's Homepage">
+    <meta name="twitter:title" content="Yushi Feng's Homepage">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="dataset-badges.js" defer></script>
+</head>
+<body>
+<header>
+    <nav id="navbar" aria-label="Primary">
+        <div class="container">
+            <button id="hamburger-menu" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <a href="#" class="logo">Yushi Feng</a>
+            <ul id="primary-nav">
+                <li><a href="#" class="home-link">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#talks">Talks</a></li>
+            </ul>
+            <button id="mode-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+                <span class="sun" aria-hidden="true"></span>
+                <span class="moon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" focusable="false">
+                        <path d="M6 .28a.77.77 0 0 1 .08.86 7.21 7.21 0 0 0-.88 3.46c0 4.02 3.28 7.27 7.32 7.27.53 0 1.04-.05 1.53-.16a.79.79 0 0 1 .81.32.73.73 0 0 1-.03.89A8.35 8.35 0 0 1 8.34 16C3.73 16 0 12.29 0 7.71 0 4.27 2.11 1.31 5.12.06A.75.75 0 0 1 6 .28Z"></path>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </nav>
+    <div class="container profile-container">
+        <div class="photo-container">
+            <img src="photo.jpg" alt="Yushi Feng">
+        </div>
+        <div class="text-content">
+            <h1>Yushi Feng</h1>
+            <div class="biography">
+                <p><strong>PhD Student</strong></p>
+                <p>Division of AI &amp; Data Science</p>
+                <p>School of Computing &amp; Data Science</p>
+                <p>The University of Hong Kong</p>
+            </div>
+            <div class="contact-info">
+                <p>Email: <a id="email-link" href="#" data-u="fengys" data-d1="connect" data-d2="hku" data-d3="hk">fengys [at] connect.hku.hk</a></p>
+            </div>
+            <div class="social-links">
+                <a href="https://scholar.google.com/citations?user=b6LgX54AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar">
+                    <i class="ai ai-google-scholar" aria-hidden="true"></i>
+                </a>
+                <a href="https://x.com/steveysfeng" target="_blank" rel="noopener noreferrer" title="X" aria-label="X">
+                    <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ysfeng" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://orcid.org/0009-0002-9880-1190" target="_blank" rel="noopener noreferrer" title="ORCID" aria-label="ORCID">
+                    <i class="ai ai-orcid" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/ys-feng" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container compact-grid">
+<div id="biography" class="section full-span">
+    <h2>About</h2>
+    <p class="about-intro">
+        I am a PhD student at <a href="https://www.hku.hk/" target="_blank" rel="noopener noreferrer">The University of Hong Kong</a>, advised by Prof. <a href="https://yulequan.github.io/" target="_blank" rel="noopener noreferrer">Lequan Yu</a>. Before that, I received my BSc from HKU in 2024.
+    </p>
+    <p class="about-research-heading"><strong>Current Research Interests:</strong></p>
+    <ul class="about-research-list">
+        <li><strong>Foundation Models</strong>: Large Language Model Mid-Training &amp; Post-Training, World Modeling.</li>
+        <li><strong>Multimodal &amp; Embodied Models</strong>: Vision-Language Models, Agentic AI, Embodied Learning.</li>
+        <li><strong>AI for Science</strong>: Medical MLLMs &amp; Agents, Safety &amp; Trustworthiness, Clinical Decision Support.</li>
+    </ul>
+
+</div>
+
+<div id="news" class="section news-section full-span" aria-label="Latest news">
+    <h2>News</h2>
+    <div class="news-scroller" role="region" aria-live="polite">
+        <ul class="news-list">
+            <li class="news-item">
+                <span class="news-date">08/2026</span>
+                <span class="news-content">Two papers were accepted by <a href="https://2026.emnlp.org/" target="_blank" rel="noopener noreferrer">EMNLP 2026</a>.</span>
+            </li>
+            <li class="news-item">
+                <span class="news-date">07/2026</span>
+                <span class="news-content">We released the Open-AoE <a href="https://arxiv.org/abs/2607.14183" target="_blank" rel="noopener noreferrer">paper</a>, <a href="https://huggingface.co/datasets/inclusionAI/OpenAoE-2000h" target="_blank" rel="noopener noreferrer">dataset</a>, and <a href="https://github.com/ant-research/Open-AoE" target="_blank" rel="noopener noreferrer">code</a>.</span>
+            </li>
+            <li class="news-item">
+                <span class="news-date">05/2026</span>
+                <span class="news-content">One paper was accepted by <a href="https://structureddata4health.github.io/index.html" target="_blank" rel="noopener noreferrer">ICML 2026 SD4H Workshop</a>.</span>
+            </li>
+            <li class="news-item">
+                <span class="news-date">01/2026</span>
+                <span class="news-content">Our work <a href="https://doi.org/10.1016/j.neunet.2025.107777" target="_blank" rel="noopener noreferrer">DemoGraph</a> was featured in <a href="https://www.forbeschina.com/youth/70901" target="_blank" rel="noopener noreferrer">Forbes Youth</a>.</span>
+            </li>
+            <li class="news-item">
+                <span class="news-date">11/2025</span>
+                <span class="news-content">One paper was accepted by <a href="https://aaai.org/aaai-conference/aaai-26/" target="_blank" rel="noopener noreferrer">AAAI 2026</a> (Oral).</span>
+            </li>
+            <li class="news-item">
+                <span class="news-date">09/2025</span>
+                <span class="news-content">One paper was accepted by <a href="https://neurips.cc/Conferences/2025/" target="_blank" rel="noopener noreferrer">NeurIPS 2025</a> (main track).</span>
+            </li>
+            <li class="news-item">
+                <span class="news-date">07/2025</span>
+                <span class="news-content">One paper was accepted by <a href="https://cvamd.github.io/CVAMD2025/" target="_blank" rel="noopener noreferrer">ICCV 2025 CVAMD Workshop</a> (Oral).</span>
+            </li>
+            <li class="news-item">
+                <span class="news-date">06/2025</span>
+                <span class="news-content">One paper was accepted by <a href="https://knowledgeable-lm.github.io/" target="_blank" rel="noopener noreferrer">ACL 2025 KnowFM Workshop</a>.</span>
+            </li>
+            <li class="news-item">
+                <span class="news-date">06/2025</span>
+                <span class="news-content">One paper was accepted by <a href="https://www.sciencedirect.com/journal/neural-networks/" target="_blank" rel="noopener noreferrer">Neural Networks</a>.</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="publications" class="section full-span">
+    <h2>Selected Publications <a href="https://scholar.google.com/citations?user=b6LgX54AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="section-heading-link" title="Google Scholar Profile" aria-label="Google Scholar Profile">[<i class="ai ai-google-scholar" aria-hidden="true"></i>]</a></h2>
+    <p class="note publication-note">
+        * indicates equal contribution; † indicates corresponding authorship.
+    </p>
+
+    <div class="experience-item">
+        <h3 class="publication-heading">
+            <span><a href="https://arxiv.org/abs/2607.14183" target="_blank" rel="noopener noreferrer">Open-AoE: Open-Source Egocentric Data and Toolchain for Embodied AI</a></span>
+            <span class="publication-badges" id="openaoe-badges" aria-live="polite">
+                <a class="metric-badge" id="modelscope-downloads" href="https://www.modelscope.cn/datasets/inclusionAI/OpenAoE-2000h" target="_blank" rel="noopener noreferrer" title="OpenAoE-2000h downloads on ModelScope" aria-label="OpenAoE-2000h downloads on ModelScope. View dataset.">
+                    <span class="metric-badge-label">
+                        <img class="metric-badge-logo" src="assets/modelscope.ico" width="14" height="14" alt="">
+                        ModelScope
+                        <svg class="metric-badge-download-icon" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M8 2v8m-3-3 3 3 3-3M3 11v3h10v-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span><span class="metric-badge-value">—</span>
+                </a>
+                <a class="metric-badge metric-badge-rank" id="modelscope-rank" href="https://www.modelscope.cn/datasets?page=1&amp;sort=downloads" target="_blank" rel="noopener noreferrer" title="OpenAoE-2000h rank among all ModelScope datasets by downloads" aria-label="OpenAoE-2000h rank among all ModelScope datasets by downloads. View ranking.">
+                    <span class="metric-badge-label"><img class="metric-badge-logo" src="assets/modelscope.ico" width="14" height="14" alt="ModelScope">Overall rank</span><span class="metric-badge-value">—</span>
+                </a>
+                <a class="metric-badge" id="huggingface-downloads" href="https://huggingface.co/datasets/inclusionAI/OpenAoE-2000h" target="_blank" rel="noopener noreferrer" title="OpenAoE-2000h all-time downloads on Hugging Face" aria-label="OpenAoE-2000h cumulative downloads since the repository was created on Hugging Face. View dataset.">
+                    <span class="metric-badge-label">
+                        <span class="metric-badge-logo metric-badge-emoji" aria-hidden="true">🤗</span>
+                        HF total
+                        <svg class="metric-badge-download-icon" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M8 2v8m-3-3 3 3 3-3M3 11v3h10v-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span><span class="metric-badge-value">—</span>
+                </a>
+            </span>
+        </h3>
+        <p class="authors">
+            Ant Group, ZJU, HKU, and others. <strong>Yushi Feng*</strong> is among the equal contributors.
+        </p>
+        <p class="venue">
+            <strong><em>Technical Report</em></strong>, 2026. [<a href="https://arxiv.org/abs/2607.14183" target="_blank" rel="noopener noreferrer">arXiv</a>] [<a href="https://github.com/ant-research/Open-AoE" target="_blank" rel="noopener noreferrer">GitHub</a>] [<a href="https://huggingface.co/datasets/inclusionAI/OpenAoE-2000h" target="_blank" rel="noopener noreferrer">Dataset</a>] [<a href="https://huggingface.co/papers/2607.14183" target="_blank" rel="noopener noreferrer">Hugging Face</a>]
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://ojs.aaai.org/index.php/AAAI/article/view/40328" target="_blank" rel="noopener noreferrer">PASS: Probabilistic Agentic Supernet Sampling for Interpretable and Adaptive Chest X-Ray Reasoning</a></span>
+        </h3>
+        <p class="authors">
+            <strong>Yushi Feng</strong>, Junye Du, Yingying Hong, Qifan Wang, Lequan Yu†.
+        </p>
+        <p class="venue">
+            <strong><em>AAAI</em></strong> 2026 (<strong>Oral</strong>, top 4.5%).
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://arxiv.org/abs/2502.15902" target="_blank" rel="noopener noreferrer">IPAD: Inverse Prompt for AI Detection - A Robust and Interpretable LLM-Generated Text Detector</a></span>
+        </h3>
+        <p class="authors">
+            Zheng Chen*, <strong>Yushi Feng*</strong>, Jisheng Dang, Yue Deng, Changyang He, Hongxi Pu, Haoxuan Li†, Bo Li†.
+        </p>
+        <p class="venue">
+            <strong><em>NeurIPS</em></strong> 2025 (Main Track).
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://www.sciencedirect.com/science/article/pii/S0893608025006574" target="_blank" rel="noopener noreferrer">Democratizing Large Language Model-Based Graph Data Augmentation via Latent Knowledge Graphs</a></span>
+        </h3>
+        <p class="authors">
+            <strong>Yushi Feng*</strong>, Tsai Hor Chan*, Guosheng Yin, Lequan Yu†.
+        </p>
+        <p class="venue">
+            <strong><em>Neural Networks</em></strong>, 2025.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://openreview.net/forum?id=4TtghV7zP3" target="_blank" rel="noopener noreferrer">Dental-TriageBench: Benchmarking Multimodal Reasoning for Hierarchical Dental Triage</a></span>
+        </h3>
+        <p class="authors">
+            Ziyi He*, <strong>Yushi Feng*</strong>, et al.
+        </p>
+        <p class="venue">
+            <strong><em>EMNLP</em></strong> 2026 (Main Conference). [<a href="https://arxiv.org/abs/2604.13060" target="_blank" rel="noopener noreferrer">arXiv</a>]
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://arxiv.org/abs/2604.09155" target="_blank" rel="noopener noreferrer">CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation</a></span>
+        </h3>
+        <p class="authors">
+            <strong>Yushi Feng</strong>, Junye Du, Qifan Wang, Zizhan Ma, Qian Niu, Yutaka Matsuo, Long Feng, Lequan Yu†.
+        </p>
+        <p class="venue">
+            <strong><em>Preprint</em></strong>, 2026.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://openreview.net/forum?id=2ABOrcYY9i" target="_blank" rel="noopener noreferrer">ProActIS: Boosting LLMs' Proactive Information Seeking in Dynamic Clinical Workflows with a Lightweight Exam Proposer</a></span>
+        </h3>
+        <p class="authors">
+            Ruiyang Zhang, <strong>Yushi Feng</strong>, Liang Peng, Lequan Yu†.
+        </p>
+        <p class="venue">
+            <strong><em>EMNLP</em></strong> 2026 Findings.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://openreview.net/forum?id=NKYwUOZubh" target="_blank" rel="noopener noreferrer">MedDocBench: Benchmarking Vision-Language Models for Reliable Structured Extraction from Real-World Clinical Forms</a></span>
+        </h3>
+        <p class="authors">
+            Qijia Tian*, <strong>Yushi Feng*</strong>, Shuangyu Yang, Weifa Yang†, Lequan Yu†.
+        </p>
+        <p class="venue">
+            <strong><em>ICML</em></strong> 2026 SD4H Workshop.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://arxiv.org/abs/2605.06446" target="_blank" rel="noopener noreferrer">FedFrozen: Two-Stage Federated Optimization via Attention Kernel Freezing</a></span>
+        </h3>
+        <p class="authors">
+            Junye Du*, Zhenghao Li*, <strong>Yushi Feng</strong>, Long Feng†.
+        </p>
+        <p class="venue">
+            <strong><em>Preprint</em></strong>, 2026.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://openaccess.thecvf.com/content/ICCV2025W/CVAMD/html/Xiao_A_Dynamic_Agent_Framework_for_Large_Language_Model_Reasoning_for_ICCVW_2025_paper.html" target="_blank" rel="noopener noreferrer">A Dynamic Agent Framework for Large Language Model Reasoning for Medical and Visual Question Answering</a></span>
+        </h3>
+        <p class="authors">
+            Ziyan Xiao, Ruiyang Zhang, <strong>Yushi Feng</strong>, Lingting Zhu, Liang Peng, Lequan Yu†.
+        </p>
+        <p class="venue">
+            <strong><em>ICCV</em></strong> 2025 CVAMD Workshop (Full Paper, Oral).
+        </p>
+    </div>
+
+</div>
+
+<div id="awards" class="section full-span">
+    <h2>Awards &amp; Honors</h2>
+    <ul>
+        <li>Silver Technical Reviewer, <a href="https://icml.cc/Conferences/2026" target="_blank" rel="noopener noreferrer">ICML</a>, 2026.</li>
+        <li><a href="https://www.forbeschina.com/youth/70901" target="_blank" rel="noopener noreferrer">Forbes Youth</a> feature, 2026.</li>
+        <li>AAAI-26 Student Scholarship, <a href="https://aaai.org/" target="_blank" rel="noopener noreferrer">AAAI</a>, 2025.</li>
+        <li>Postgraduate Scholarship, HKU, 2024-Present.</li>
+        <li>Dean's Honours List (Top 5%), HKU, 2024.</li>
+        <li>Outstanding Tech Final Year Project Award (USD 167,000), Incubation Programme, <a href="https://www.hkstp.org/" target="_blank" rel="noopener noreferrer">HKSTP</a>, 2024.</li>
+        <li>Summer Research Fellowship (USD 2,000), HKU, 2023.</li>
+    </ul>
+</div>
+
+
+
+<div id="service" class="section full-span">
+    <h2>Professional Activities</h2>
+    <ul>
+        <li class="service-item"><strong>Conference Reviews:</strong> NeurIPS, ICML, ICLR, CVPR, ACL, AAAI, ECCV, MICCAI, ISBI</li>
+        <li class="service-item"><strong>Journal Reviews:</strong> Transactions on Machine Learning Research (TMLR), Pattern Recognition, npj Digital Medicine, ACM Transactions on Computing for Healthcare</li>
+    </ul>
+</div>
+
+<div id="talks" class="section full-span">
+    <h2>Talks &amp; Presentations</h2>
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://arxiv.org/abs/2607.14183" target="_blank" rel="noopener noreferrer">Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied Learning</a></span>
+        </h3>
+        <p class="venue">
+            Invited Talk, <strong><em>AgiBot × Lumina Embodied AI Workshop</em></strong>, Shenzhen, Sep. 2026.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>
+            <span><a href="https://ojs.aaai.org/index.php/AAAI/article/view/40328" target="_blank" rel="noopener noreferrer">PASS: Probabilistic Agentic Supernet Sampling for Interpretable and Adaptive Chest X-Ray Reasoning</a></span>
+        </h3>
+        <p class="venue">
+            Oral Presentation, <strong><em>AAAI 2026</em></strong>, Singapore EXPO, Singapore, Jan. 2026.
+        </p>
+    </div>
+</div>
+
+
+</main>
+
+<script async type='text/javascript' id='clustrmaps' src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&amp;w=222&amp;t=tt&amp;d=vlgJLAPzmOOnR6ZgnSlFgbrvv8iaONqgcMOq7KC8JH4'></script>
+
+<footer>
+<!-- <p>Last updated: May 2026</p> -->
+</footer>
+
+<script>
+    const MOBILE_BREAKPOINT = 768;
+    const NEWS_VISIBLE_COUNT = 5;
+    const THEME_STORAGE_KEY = 'theme';
+
+    document.getElementById('navbar').addEventListener('click', function (e) {
+        const link = e.target.closest('a');
+        if (!link || !this.contains(link)) return;
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) return;
+
+        e.preventDefault();
+        const targetId = href.substring(1);
+        if (targetId === '' || link.classList.contains('home-link')) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const nav = document.getElementById('navbar');
+                const navHeight = nav ? nav.offsetHeight : 0;
+                const rect = targetElement.getBoundingClientRect();
+                const absoluteY = window.pageYOffset + rect.top - navHeight - 10;
+                window.scrollTo({ top: absoluteY, behavior: 'smooth' });
+            }
+        }
+        if (window.innerWidth <= MOBILE_BREAKPOINT) {
+            closeMenu();
+        }
+    });
+
+    document.querySelector('.logo').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const modeToggle = document.getElementById('mode-toggle');
+    const body = document.body;
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('primary-nav');
+
+    function syncThemeToggleState() {
+        modeToggle.setAttribute('aria-pressed', String(body.classList.contains('dark-mode')));
+    }
+
+    function initializeTheme() {
+        const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+        
+        if (savedTheme) {
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+            }
+        } else {
+            if (prefersDarkScheme.matches) {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+            }
+        }
+
+        syncThemeToggleState();
+    }
+
+    prefersDarkScheme.addEventListener('change', (e) => {
+        const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+        if (!savedTheme) {
+            if (e.matches) {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+            }
+
+            syncThemeToggleState();
+        }
+    });
+
+    modeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        localStorage.setItem(THEME_STORAGE_KEY, body.classList.contains('dark-mode') ? 'dark' : 'light');
+        syncThemeToggleState();
+    });
+
+    initializeTheme();
+
+    function syncMenuState(isExpanded) {
+        hamburgerMenu.setAttribute('aria-expanded', String(isExpanded));
+    }
+
+    
+    hamburgerMenu.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isExpanded = navLinks.classList.toggle('active');
+        hamburgerMenu.classList.toggle('active', isExpanded);
+        syncMenuState(isExpanded);
+    }, { passive: false });
+
+    function closeMenu() {
+        navLinks.classList.remove('active');
+        hamburgerMenu.classList.remove('active');
+        syncMenuState(false);
+    }
+
+    function limitNewsToFiveItems() {
+        const scroller = document.querySelector('#news .news-scroller');
+        const list = scroller ? scroller.querySelector('.news-list') : null;
+        if (!scroller || !list) return;
+
+        const items = Array.from(list.querySelectorAll('.news-item'));
+
+        if (items.length <= NEWS_VISIBLE_COUNT) {
+            scroller.style.maxHeight = 'none';
+            scroller.style.overflowY = 'visible';
+            return;
+        }
+
+        const styles = getComputedStyle(list);
+        const gap = parseFloat(styles.rowGap || styles.gap || '0') || 0;
+
+        let height = 0;
+        for (let i = 0; i < NEWS_VISIBLE_COUNT; i++) {
+            height += items[i].getBoundingClientRect().height;
+        }
+
+        height += gap * (NEWS_VISIBLE_COUNT - 1);
+        scroller.style.maxHeight = `${Math.ceil(height)}px`;
+        scroller.style.overflowY = 'auto';
+    }
+
+    document.addEventListener('click', (event) => {
+        const isClickInsideNav = navLinks.contains(event.target) || hamburgerMenu.contains(event.target);
+        if (!isClickInsideNav && navLinks.classList.contains('active')) {
+            closeMenu();
+        }
+    }, { passive: true });
+
+    limitNewsToFiveItems();
+    window.addEventListener('resize', limitNewsToFiveItems);
+    window.addEventListener('load', limitNewsToFiveItems);
+    
+    // Assemble mailto at runtime while keeping obfuscated text
+    (function () {
+        const link = document.getElementById('email-link');
+        if (!link) return;
+        const u = link.getAttribute('data-u');
+        const d1 = link.getAttribute('data-d1');
+        const d2 = link.getAttribute('data-d2');
+        const d3 = link.getAttribute('data-d3');
+        if (!u || !d1 || !d2 || !d3) return;
+        const address = `${u}@${d1}.${d2}.${d3}`;
+        link.setAttribute('href', 'mailto:' + address);
+    })();
+</script>
+</body>
+</html>
